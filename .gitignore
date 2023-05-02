@@ -1,0 +1,5 @@
+# ignore images
+/heic_img
+
+# venv
+/myenv

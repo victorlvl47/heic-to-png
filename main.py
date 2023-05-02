@@ -11,6 +11,7 @@ for filename in os.listdir(directory):
     if filename.endswith(".HEIC"):
         # create an Image object from the HEIC file
         filepath = os.path.join(directory, filename)
+        print("Converting:", filepath)
         heif_file = pillow_heif.read_heif(filepath)
         image = Image.frombytes(
             heif_file.mode,

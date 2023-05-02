@@ -40,3 +40,5 @@ pip install pillow
 # set the directory path containing the HEIC files
 directory = 'heic_img'
 ```
+
+- This script was developed and used only on Windows 10.

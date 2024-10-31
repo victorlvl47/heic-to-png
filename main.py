@@ -8,7 +8,7 @@ directory = 'heic_img'
 # loop through all files in the directory
 for filename in os.listdir(directory):
      # check if the file is in HEIC format
-    if filename.endswith(".HEIC"):
+    if filename.lower().endswith(".heic"):
         # create an Image object from the HEIC file
         filepath = os.path.join(directory, filename)
         print("Converting:", filepath)

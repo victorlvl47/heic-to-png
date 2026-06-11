@@ -43,7 +43,7 @@ python main.py "C:\path\to\your\photos"
 Example:
 
 ```bash
-python main.py "C:\Users\viclv\Pictures\iPhone Photos"
+python main.py "C:\Users\user\Pictures\iPhone Photos"
 ```
 
 The script will automatically create a `converted-png-files` folder inside the selected folder and save the converted PNG files there.
@@ -73,7 +73,7 @@ No manual output folder creation is needed.
 Example:
 
 ```bash
-python main.py "C:\Users\viclv\Pictures\iPhone Photos"
+python main.py "C:\Users\user\Pictures\iPhone Photos"
 ```
 
 > [!NOTE]

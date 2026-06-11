@@ -6,16 +6,31 @@ This is a simple Python script that converts all HEIC files in a directory to PN
 
 ## Requirements
 
-This script requires the following libraries to be installed:
+This script was tested with:
 
-- `Pillow`
-- `pillow-heif`
+* Python `3.12.10`
+* Windows 11
+* `Pillow`
+* `pillow-heif`
 
-You can install them by running:
+Install the Python dependencies by running:
 
-```
+```bash
 pip install -r requirements.txt
 ```
+
+You can check your Python version with:
+
+```bash
+python --version
+```
+
+Expected working version:
+
+```bash
+Python 3.12.10
+```
+
 
 ## Usage
 
@@ -39,4 +54,5 @@ pip install -r requirements.txt
 directory = 'heic_img'
 ```
 
-> [!Note] This script was developed and used only on Windows 11.
+> [!NOTE]
+> This script was developed and tested on Windows 11 using Python `3.12.10`.

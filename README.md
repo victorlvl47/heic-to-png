@@ -34,24 +34,46 @@ Python 3.12.10
 
 ## Usage
 
-1. Place all the HEIC files you want to convert in the `heic_img` directory.
+Run the script and pass the folder that contains your HEIC photos:
 
-2. Create an `output` directory
+```bash
+python main.py "C:\path\to\your\photos"
+```
 
-3. Run the script `main.py` using the following command:
+Example:
 
-   ```
-   python main.py
-   ```
+```bash
+python main.py "C:\Users\viclv\Pictures\iPhone Photos"
+```
 
-4. All HEIC files in the `heic_img` directory will be converted to PNG format and saved in the same directory with the same name but with the `.png` extension.
+The script will automatically create an `output` folder inside the selected folder and save the converted PNG files there.
+
+Example result:
+
+```text
+iPhone Photos/
+  IMG_001.HEIC
+  IMG_002.HEIC
+  output/
+    IMG_001.png
+    IMG_002.png
+```
+
+No manual output folder creation is needed.
+
 
 ## Notes
 
-- If you want to convert HEIC files in a different directory, modify the `input_dir` variable in the script to the appropriate directory path.
-```python
-# set the directory path containing the HEIC files
-directory = 'heic_img'
+* The folder path is passed from the command line when running the script.
+* The script automatically creates an `output` folder inside the selected folder.
+* Converted PNG files are saved in the `output` folder.
+* Original HEIC files are not modified or deleted.
+* Folder paths with spaces should be wrapped in quotes.
+
+Example:
+
+```bash
+python main.py "C:\Users\viclv\Pictures\iPhone Photos"
 ```
 
 > [!NOTE]

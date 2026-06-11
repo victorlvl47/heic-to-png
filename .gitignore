@@ -4,3 +4,5 @@
 # venv
 /myenv/
 venv/
+env/
+.env/

@@ -5,7 +5,7 @@ import pillow_heif
 
 
 def convert_heic_to_png(input_dir):
-    output_dir = os.path.join(input_dir, "output")
+    output_dir = os.path.join(input_dir, "converted-png-files")
     os.makedirs(output_dir, exist_ok=True)
 
     converted_count = 0

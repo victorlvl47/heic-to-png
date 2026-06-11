@@ -46,7 +46,7 @@ Example:
 python main.py "C:\Users\viclv\Pictures\iPhone Photos"
 ```
 
-The script will automatically create an `output` folder inside the selected folder and save the converted PNG files there.
+The script will automatically create a `converted-png-files` folder inside the selected folder and save the converted PNG files there.
 
 Example result:
 
@@ -54,7 +54,7 @@ Example result:
 iPhone Photos/
   IMG_001.HEIC
   IMG_002.HEIC
-  output/
+  converted-png-files/
     IMG_001.png
     IMG_002.png
 ```
@@ -65,8 +65,8 @@ No manual output folder creation is needed.
 ## Notes
 
 * The folder path is passed from the command line when running the script.
-* The script automatically creates an `output` folder inside the selected folder.
-* Converted PNG files are saved in the `output` folder.
+* The script automatically creates a `converted-png-files` folder inside the selected folder.
+* Converted PNG files are saved in the `converted-png-files` folder.
 * Original HEIC files are not modified or deleted.
 * Folder paths with spaces should be wrapped in quotes.
 

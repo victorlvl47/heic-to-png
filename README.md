@@ -46,6 +46,12 @@ Example:
 python main.py "C:\Users\user\Pictures\iPhone Photos"
 ```
 
+To also save metadata sidecar files, add the `--metadata` flag:
+
+```bash
+python main.py "C:\Users\user\Pictures\iPhone Photos" --metadata
+```
+
 The script will automatically create a `converted-png-files` folder inside the selected folder and save the converted PNG files there.
 
 Example result:
@@ -59,6 +65,16 @@ iPhone Photos/
     IMG_002.png
 ```
 
+When `--metadata` is used, each converted PNG also gets a `.metadata.json` sidecar file in the same folder:
+
+```text
+iPhone Photos/
+  IMG_001.HEIC
+  converted-png-files/
+    IMG_001.png
+    IMG_001.metadata.json
+```
+
 No manual output folder creation is needed.
 
 
@@ -67,6 +83,8 @@ No manual output folder creation is needed.
 * The folder path is passed from the command line when running the script.
 * The script automatically creates a `converted-png-files` folder inside the selected folder.
 * Converted PNG files are saved in the `converted-png-files` folder.
+* Metadata sidecar files are saved only when `--metadata` is used.
+* Metadata may include sensitive information like GPS location, device model, and capture date/time.
 * Original HEIC files are not modified or deleted.
 * Folder paths with spaces should be wrapped in quotes.
 
